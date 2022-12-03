@@ -1,0 +1,173 @@
+@import "src/_variables";
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background-color: $background;
+  position: relative;
+
+  .nav_menu {
+    background-color: #fff;
+    width: 16%;
+    height: 100%;
+    box-shadow: 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    .logo {
+      margin: 0 auto;
+      margin-top: 26px;
+      margin-bottom: 22px;
+    }
+    .delimiter {
+      width: 80%;
+      margin: 0 auto;
+      height: 1px;
+      background-color: #E7E7E7;
+      border-radius: 20px;
+      margin-bottom: 28px;
+    }
+    .menu_list {
+      list-style-type: none;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      .menu_item {
+        color: #00A9DF;
+        font-size: 20px;
+        font-weight: 300;
+        margin-bottom: 8px;
+        padding-left: 80px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        cursor: pointer;
+        transition: .3s;
+        position: relative;
+
+        &:hover {
+          opacity: .8;
+        }
+      }
+      .menu_item_active {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 300;
+        background-color: #00A9DF;
+        margin-bottom: 8px;
+        padding-left: 80px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        cursor: pointer;
+        margin-right: 47px;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+        transition: .3s;
+        position: relative;
+
+        &:hover {
+          margin-right: 37px;
+        }
+
+      }
+      .menu_item_last {
+        color: #00A9DF;
+        font-size: 20px;
+        font-weight: 300;
+        margin-bottom: 8px;
+        padding-left: 80px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        cursor: pointer;
+        transition: .3s;
+        position: relative;
+        margin-top: auto;
+        margin-bottom: 43px;
+
+        &:hover {
+          opacity: .8;
+        }
+      }
+    }
+  }
+
+  .content {
+    position: absolute;
+    width: 84%;
+    top: 0;
+    right: 0;
+    height: 100%;
+
+
+    .top_left {
+      position: absolute;
+      top: 0;
+      left: 10px;
+    }
+
+    .top_right {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    .bottom_right {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
+
+.menu_list li:nth-child(1):before {
+  content: url("loop.svg");
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 10%;
+  top: 40%;
+  transform: translateY(-50%);
+}
+.menu_list li:nth-child(2):before {
+  content: url("chat.svg");
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 10%;
+  top: 30%;
+  transform: translateY(-50%);
+}
+.menu_list li:nth-child(3):before {
+  content: url("kids.svg");
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 10%;
+  top: 30%;
+  transform: translateY(-50%);
+}
+.menu_list li:nth-child(4):before {
+  content: url("lk.svg");
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 10%;
+  top: 30%;
+  transform: translateY(-50%);
+}
+
+.menu_list li:nth-child(5):before {
+  content: url("support.svg");
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 10%;
+  top: 30%;
+  transform: translateY(-50%);
+}
