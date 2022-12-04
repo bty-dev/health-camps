@@ -1,12 +1,19 @@
 import './App.css';
 import Authorization from "./pages/Authorization/Authorization";
 import Main from "./pages/Main/Main";
+import { Routes, Route, Link } from 'react-router-dom';
+import CampInfo from "./pages/CampInfo/CampInfo";
+import MyKids from "./pages/MyKids/MyKids";
 
 function App() {
   return (
     <div className="App">
-      {/*<Authorization/>*/}
-      <Main/>
+        <Routes>
+            <Route path="/" element={<Authorization />}/>
+            <Route path="/main" element={<Main />}/>
+            <Route path="/campInfo" element={<CampInfo />}/>
+            <Route path="/myKids" element={<MyKids />}/>
+        </Routes>
     </div>
   );
 }

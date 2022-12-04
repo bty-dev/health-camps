@@ -11,6 +11,7 @@ import eye_close from './eye_close.svg';
 
 import cogoToast from "cogo-toast";
 import axios from 'axios'
+import {useNavigate} from "react-router";
 
 
 const Authorization = () => {
@@ -20,6 +21,8 @@ const Authorization = () => {
     const [error, setError] = useState(false);
 
     const [passwordShown, setPasswordShown] = useState(false);
+
+    const navigate = useNavigate();
 
     const toastOptions = {
         position: "bottom-right",
@@ -36,7 +39,13 @@ const Authorization = () => {
                     "Email": login,
                     "Password": password,
                 }).then((response) => {
-                    if (response.status === 200) cogoToast.success('Вход выполнен успешно! :)', toastOptions);
+                    if (response.status === 200) {
+                        cogoToast.success('Вход выполнен успешно! :)', toastOptions)
+                        navigate("/main")
+                    }
+                }).catch(err => {
+                    console.log("err")
+                    cogoToast.error('Проверьте правильность введенных данных!', toastOptions)
                 })
 
 

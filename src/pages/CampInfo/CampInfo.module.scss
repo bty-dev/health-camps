@@ -2,7 +2,7 @@
 
 .main {
   width: 100%;
-  height: 100%;
+  height: 200%;
   background-color: $background;
   position: relative;
 
@@ -257,69 +257,116 @@
 
   .result__search {
     background-color: #fff;
-    width: 70%;
+    width: 100%;
     border-radius: 17px;
-    height: 670px;
     z-index: 2;
+    padding: 28px 33px;
 
-    .result__title {
-      font-size: 36px;
-      font-weight: 500;
+
+    .preview__row {
+      display: flex;
+
+      .preview__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 42px;
+        color: #00AADF;
+
+        .preview__title {
+          font-size: 54px;
+          font-weight: 700;
+          margin-bottom: 15px;
+        }
+        .preview__subtitle {
+          font-size: 30px;
+          font-weight: 700;
+          margin-bottom: 15px;
+
+          .subtitle_light {
+            font-weight: 300;
+          }
+        }
+      }
+    }
+    .place__left {
+      font-size: 48px;
+      font-weight: 700;
       color: #00AADF;
-      margin-top: 25px;
-      margin-left: 40px;
-      margin-bottom: 22px;
-    }
+      padding-top: 12px;
+      margin-bottom: 44px;
 
-    .search__list {
-      width: 100%;
-      padding: 20px 35px;
-      padding-bottom: 0;
-      height: 570px;
-      overflow-y: scroll;
+      .place__light {
+        font-weight: 300;
+      }
     }
-  }
-  .result__filters {
-    width: 28%;
-    background-color: #fff;
-    border-radius: 17px;
-    z-index: 2;
+    .claim__block {
+      display: flex;
+      margin-bottom: 34px;
 
-    .result__filter {
-      background-color: #fff;
+      .btn__claim {
+        background-color: #00A9DF;
+        padding: 21px 72px;
+        font-size: 45px;
+        font-weight: 700;
+        border: none;
+        border-radius: 15px;
+        color: #fff;
+        margin-right: 95px;
+        transition: .3s;
+        cursor: pointer;
+
+        &:hover {
+          opacity: .8;
+        }
+      }
+      .price {
+        font-size: 30px;
+        font-weight: 700;
+        color: #00AADF;
+        align-self: flex-end;
+
+        .price__light {
+          font-size: 54px;
+        }
+      }
+    }
+    .certificate__block {
       width: 100%;
-      border-radius: 17px;
-      height: 670px;
-      z-index: 10;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      align-items: center;
-      padding: 24px 22px;
-      position: relative;
+      align-items: flex-start;
 
-
-      .btn__apply {
-        color: #00AADF;
-        font-size: 36px;
+      .certificate__title {
+        font-size: 48px;
         font-weight: 700;
-        text-align: center;
-        padding: 14px 84px;
-        border: none;
-        outline: none;
-        background-color: #FFFFFF;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        cursor: pointer;
-        border-radius: 17px;
-        position: absolute;
-        bottom: 30px;
-        left: 22px;
-        right: 22px;
-        transition: .2s;
+        color: #00AADF;
+        margin-bottom: 34px;
+      }
+      .certificate__list {
+        margin-left: 80px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 34px;
+      }
+    }
+    .let__rate {
+      border: none;
+      outline: none;
+      background-color: #00A9DF;
+      font-size: 32px;
+      padding: 15px 68px;
+      color: #fff;
+      border-radius: 15px;
+      transition: .2s;
+      cursor: pointer;
 
-        &:hover {
-          transform: scale(1.03);
-        }
+      &:hover {
+        opacity: .8;
       }
     }
   }

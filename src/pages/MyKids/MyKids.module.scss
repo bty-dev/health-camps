@@ -261,6 +261,45 @@
     border-radius: 17px;
     height: 670px;
     z-index: 2;
+    padding: 30px;
+
+    .row {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      .col {
+        padding-left: 27px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        color: #00AADF;
+
+        .name {
+          font-size: 36px;
+          font-weight: 700;
+          margin-bottom: 10px;
+        }
+        .date {
+          font-size: 20px;
+          font-weight: 700;
+          margin-bottom: 8px;
+        }
+        .country {
+          font-size: 20px;
+          font-weight: 700;
+        }
+
+        .code {
+          font-weight: 300;
+          background-color: #F5F5F5;
+          padding: 5px 8px;
+          border-radius: 10px;
+        }
+      }
+    }
 
     .result__title {
       font-size: 36px;
@@ -338,4 +377,75 @@
   background-color: #00AADF;
   box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
   border-radius: 100px;
+}
+
+
+.kid__item {
+  width: 100%;
+  border-radius: 17px;
+  background-color: #fff;
+  padding: 13px 19px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  transition: .2s;
+  margin-bottom: 20px;
+
+
+  &:hover {
+    opacity: .7;
+  }
+
+  .kid__name {
+    font-size: 20px;
+    color: #00A9DF;
+    padding-left: 20px;
+  }
+}
+
+.kid__item__active {
+  width: 100%;
+  border-radius: 17px;
+  background-color: #00A9DF;
+  padding: 13px 19px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  transition: .2s;
+  margin-bottom: 20px;
+
+
+  &:hover {
+    opacity: .7;
+  }
+
+  .kid__name__active {
+    font-size: 20px;
+    color: #fff;
+    padding-left: 20px;
+  }
+}
+
+.add__child {
+  width: 100%;
+  border-radius: 17px;
+  padding: 19px 54px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  color: #00A9DF;
+  background-color: #fff;
+  border: none;
+  font-size: 24px;
+  transition: .3s;
+
+
+  &:hover {
+    color: #fff;
+    background-color: #00A9DF;
+  }
 }

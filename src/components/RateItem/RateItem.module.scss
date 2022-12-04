@@ -1,0 +1,76 @@
+.main {
+  background-color: #FFFFFF;
+  border-radius: 53px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 493px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+
+  .rate__header {
+    width: 100%;
+    height: 140px;
+    background-color: #00A9DF;
+    border-radius: 45px;
+    padding: 24px 27px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    .ava {
+      margin-right: 20px;
+    }
+
+    .person__info {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      .name {
+        color: #FFFFFF;
+        font-size: 32px;
+        margin-bottom: 10px;
+      }
+      .birth {
+        color: #FFFFFF;
+        font-size: 20px;
+        margin-bottom: 2px;
+      }
+      .about {
+        color: #FFFFFF;
+        font-size: 20px;
+      }
+    }
+  }
+  .rate__text {
+    color: #00A9DF;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 34px 27px;
+  }
+  .rate__bottom {
+    width: 80%;
+    margin-bottom: 27px;
+    font-size: 18px;
+    color: #1F4989;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .stars {
+      color: #F3A017;
+    }
+  }
+
+  transition: .3s;
+  margin-right: 42px;
+  &:hover {
+    transform: scale(1.02);
+  }
+}
