@@ -20,8 +20,8 @@ const CampInfo = () => {
                 <img className={classes.logo} src={logo} alt="logo"/>
                 <hr className={classes.delimiter}/>
                 <ul className={classes.menu_list}>
-                    <li className={classes.menu_item_active}>Каталог</li>
-                    <li className={classes.menu_item}>Чаты</li>
+                    <li onClick={() => navigate("/")} className={classes.menu_item_active}>Каталог</li>
+                    <li onClick={() => navigate("/chat")}  className={classes.menu_item}>Чаты</li>
                     <li onClick={() => navigate("/myKids")} className={classes.menu_item}>Мои дети</li>
                     <li className={classes.menu_item}>Личный кабинет</li>
                     <li className={classes.menu_item_last}>Поддержка</li>

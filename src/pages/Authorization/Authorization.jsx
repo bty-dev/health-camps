@@ -41,7 +41,7 @@ const Authorization = () => {
                 }).then((response) => {
                     if (response.status === 200) {
                         cogoToast.success('Вход выполнен успешно! :)', toastOptions)
-                        navigate("/main")
+                        navigate("/")
                     }
                 }).catch(err => {
                     console.log("err")
