@@ -61,7 +61,7 @@ const CampInfo = () => {
                             Осталось мест : <span className={classes.place__light}>144</span>
                         </div>
                         <div className={classes.claim__block}>
-                            <button className={classes.btn__claim}>Подать заявку</button>
+                            <button className={classes.btn__claim} onClick={() => navigate("/main")}>Подать заявку</button>
                             <div className={classes.price}>
                                 Стоимость : <span className={classes.price__light}>33.560  руб</span>
                             </div>
